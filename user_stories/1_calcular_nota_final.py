@@ -1,6 +1,6 @@
 #Definir funcion para calcular la nota final del estudiante
 def calcular_nota_final(): 
-    nombre = input("Introduce tu nombre: ")
+    nombre = input("Introduce el nombre del estudiante: ")
     suma = 0
     for i in range(3): 
         nota = float(input(f"Introduce la nota número {i+1} : "))
@@ -8,7 +8,7 @@ def calcular_nota_final():
     media_nota = suma / 3
     nombre_mayuscula = nombre.upper()
     #Mostrar la media nota en la consola
-    print(f"{nombre_mayuscula} tu nota final es {media_nota:.2f}")
+    print(f"La nota final de {nombre_mayuscula} es {media_nota:.2f}")
 
 #Llamamos la función
 calcular_nota_final()
